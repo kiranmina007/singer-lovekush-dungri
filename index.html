@@ -1,207 +1,330 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Untitled</title>
-    
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIFTY & SENSEX TRADE ZERO TO HERO</title>
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+    <title>God Father </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '28703616219274757');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=28703616219274757&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
 
         body {
-            background: linear-gradient(135deg, #0a0f1d 0%, #071828 100%);
-            color: #ffffff;
             min-height: 100vh;
             display: flex;
-            justify-content: center;
             align-items: center;
-            padding: 20px;
+            justify-content: center;
+            padding: 36px 16px;
+            background:
+                radial-gradient(ellipse 55% 40% at 0% 0%, rgba(255, 255, 255, 0.35) 0%, transparent 60%),
+                radial-gradient(ellipse 50% 40% at 100% 100%, rgba(255, 255, 255, 0.22) 0%, transparent 55%),
+                radial-gradient(ellipse 45% 35% at 100% 0%, rgba(180, 210, 255, 0.2) 0%, transparent 50%),
+                linear-gradient(180deg, #1a2a5a 0%, #0c1840 40%, #060e28 100%);
+            color: #fff;
         }
 
-        .container {
-            max-width: 480px;
+        .card {
             width: 100%;
-            background: rgba(18, 26, 43, 0.95);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 30px 20px;
+            max-width: 360px;
+            padding: 38px 24px 28px;
+            border-radius: 32px;
+            background: #0a1430;
+            border: 2px solid #e8c547;
+            box-shadow: 0 0 24px rgba(232, 197, 71, 0.25);
             text-align: center;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(10px);
         }
 
-        /* Profile Image Styling */
-        .profile-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto 15px auto;
-            display: block;
-            border: 3px solid #00e676;
-            box-shadow: 0 0 15px rgba(0, 230, 118, 0.4);
-        }
-
-        .badge {
-            background: rgba(0, 230, 118, 0.15);
-            color: #00e676;
-            border: 1px solid #00e676;
-            padding: 6px 16px;
-            border-radius: 50px;
-            font-size: 13px;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 15px;
+        .name {
+            font-size: 34px;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            background: linear-gradient(180deg, #fff8dc 0%, #f0e68c 35%, #e8c547 70%, #d4af37 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 14px;
         }
 
-        h1 {
-            font-size: 24px;
-            font-weight: 800;
+        .tagline {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
             color: #ffffff;
-            margin-bottom: 12px;
-            line-height: 1.3;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            margin-bottom: 28px;
         }
 
-        .subtitle {
-            font-size: 14px;
-            color: #a0aec0;
-            margin-bottom: 25px;
-        }
-
-        .features {
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 12px;
-            padding: 15px;
-            margin-bottom: 25px;
+        .profile-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 12px;
+            border-radius: 18px;
+            background: #121c38;
+            margin-bottom: 22px;
             text-align: left;
         }
 
-        .feature-item {
+        .profile-row img {
+            width: 92px;
+            height: 92px;
+            object-fit: cover;
+            border-radius: 14px;
+            border: 2px solid #e8c547;
+            flex-shrink: 0;
+        }
+
+        .badges {
             display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            font-size: 14px;
-            color: #e2e8f0;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;
+            min-width: 0;
         }
 
-        .feature-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .feature-item i {
-            color: #00e676;
-            margin-right: 12px;
-            font-size: 16px;
-        }
-
-        .btn-telegram {
+        .pill {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            background: linear-gradient(135deg, #0088cc 0%, #00a8ff 100%);
-            color: #ffffff;
+            gap: 6px;
+            padding: 9px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .pill.elite {
+            background: #1a56f0;
+            color: #fff;
+        }
+
+        .pill.king {
+            background: #f5d000;
+            color: #111;
+            box-shadow: 0 0 16px rgba(245, 208, 0, 0.55);
+        }
+                .timer {
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 18px;
+            color: #fff;
+        }
+
+        .timer span {
+            color: #5eead4;
+            font-weight: 800;
+        }
+
+
+        .btn {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 14px 18px;
+            margin-bottom: 20px;
+            border-radius: 16px;
             text-decoration: none;
-            padding: 16px 24px;
-            border-radius: 50px;
+            color: #fff;
             font-size: 18px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #2b6cff, #1a4fd4);
+            border: 2px solid #e8c547;
+            animation: ctaPulse 1.7s ease-in-out infinite;
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -130%;
+            width: 55%;
+            height: 100%;
+            background: linear-gradient(105deg, transparent, rgba(255,255,255,0.45), transparent);
+            transform: skewX(-22deg);
+            animation: shine 2.5s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .btn-icon {
+            position: relative;
+            z-index: 1;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #fff;
+            color: #1a56f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            flex-shrink: 0;
+        }
+
+        .btn > span:last-child {
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes ctaPulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 12px rgba(43, 108, 255, 0.35);
+            }
+            50% {
+                transform: scale(1.03);
+                box-shadow: 0 0 28px rgba(43, 108, 255, 0.7), 0 0 18px rgba(232, 197, 71, 0.35);
+            }
+        }
+
+        @keyframes shine {
+            0% { left: -130%; }
+            40%, 100% { left: 140%; }
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 16px;
+            margin-bottom: 14px;
+            border-radius: 16px;
+            background: #121c38;
+            text-align: left;
+        }
+
+        .feature i {
+            color: #3b82f6;
+            font-size: 18px;
+            width: 22px;
+            text-align: center;
+        }
+
+        .feature span {
+            font-size: 14px;
             font-weight: 700;
-            box-shadow: 0 8px 25px rgba(0, 136, 204, 0.4);
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
-        .btn-telegram:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 30px rgba(0, 136, 204, 0.6);
+        .footer {
+            margin-top: 14px;
+            padding-top: 14px;
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.4);
         }
 
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.7);
+        @media (max-width: 400px) {
+            .name {
+                font-size: 28px;
             }
-            70% {
-                box-shadow: 0 0 0 15px rgba(0, 136, 204, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
-            }
-        }
 
-        .disclaimer {
-            font-size: 11px;
-            color: #718096;
-            margin-top: 20px;
-            line-height: 1.4;
+            .profile-row img {
+                width: 78px;
+                height: 78px;
+            }
+
+            .pill {
+                font-size: 11px;
+                padding: 8px 8px;
+            }
+
+            .btn {
+                font-size: 15px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <!-- Profile Photo -->
-        <img src="https://i.ibb.co/cSXk5mt4/logo.png" alt="Profile Logo" class="profile-img">
+    <div class="card">
 
-        <span class="badge"><i class="fa-solid fa-bolt"></i> Free Telegram Channel</span>
-        
-        <h1>KING OF NIFTY</h1>
-        
-        <p class="subtitle">Daily Free Calls, Market Analysis & BankNifty Special Signals</p>
+        <h1 class="name">DR. VIKAS<br>LADDHA</h1>
+        <p class="tagline">The Ultimate Stock Analyst</p>
 
-        <div class="features">
-            <div class="feature-item">
-                <i class="fa-solid fa-circle-check"></i>
-                <span>Daily 2-3 High Accuracy Option Trade Calls</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-circle-check"></i>
-                <span>Nifty, Sensex & BankNifty Zero to Hero Trades</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-circle-check"></i>
-                <span>Proper Stop Loss & Target Updates</span>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-circle-check"></i>
-                <span>100% Free Educational Support</span>
+        <div class="profile-row">
+            <img src="https://i.ibb.co/cSXk5mt4/logo.png" alt="God Father">
+            <div class="badges">
+                <div class="pill elite">🏆 The Elite</div>
+                <div class="pill king">King of Market</div>
             </div>
         </div>
 
-        <a href="https://t.me/+vIHojSnGDdA4MDg1" target="_blank" class="btn-telegram">
-            <i class="fa-brands fa-telegram"></i> JOIN TELEGRAM NOW
+        <a class="btn" href="https://t.me/+vWzp8b60VvQ5Y2Y1" target="_blank">
+            <span class="btn-icon"><i class="fab fa-telegram-plane"></i></span>
+            <span>Join Channel</span>
         </a>
 
-        <p class="disclaimer">
-            *Disclaimer: We are SEBI unregistered. All calls are for educational purposes only. Trade at your own risk.
-        </p>
+        <div class="feature">
+            <i class="fa-solid fa-check"></i>
+            <span>Strategic Analysis</span>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Instant Updates</span>
+        </div>
+
+        <div class="timer">
+                Redirecting in <span id="count">05</span>s
+            </div>
+
+        <div class="footer">For Entertainment Purposes Only</div>
+
     </div>
 
+     <script>
+        let time = 50;
+        let counter = document.getElementById("count");
+
+        setInterval(() => {
+            time--;
+            counter.innerText = time;
+            if (time <= 0) {
+                window.location.href = "https://t.me/+vIHojSnGDdA4MDg1";
+            }
+        }, 1000);
+    </script>
+
 </body>
-</html>
-    
-  </body>
-  
+
 </html>
